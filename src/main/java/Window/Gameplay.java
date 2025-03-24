@@ -29,7 +29,7 @@ public class Gameplay extends JFrame{
         
         
         try {
-            image = ImageIO.read(new File("MattPersonalProject/Sprites/ChessBoard")); // Replace with your image file path
+            image = ImageIO.read(new File("Matt_Personal_Project/Sprites/Chess_Board.svg")); // Replace with your image file path
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -40,6 +40,6 @@ public class Gameplay extends JFrame{
     }
     //@Override 
     public void paintComponent(Graphics g){
-        
+        g.drawImage(image, 0, 0, this);
     }
 }
